@@ -23,9 +23,15 @@
 | **Felipe**   | Total Time  | 138.9835s    | 26.2203s (↓)      |               |               |               |               |
 |              | Avg         | 11.581s      | 2.185s (↓)        |               |               |               |               |
 |              | Final       | 11.581s      | 2.185s (↓)        |               |               |               |               |
+| **Guilherme**| Total Time  | 144.139s     | 33.6317s (↓)      |               |               |               |               |
+|              | Avg         | 12.011s      | 2.802s (↓)        |               |               |               |               |
+|              | Final       | 12.001s      | 2.802s (↓)        |               |               |               |               |
+| **Leonardo** | Total Time  | 200.1247s    | 27.05089s (↓)     |               |               |               |               |
+|              | Avg         | 16.677s      | 2.254s (↓)        |               |               |               |               |
+|              | Final       | 16.667s      | 2.254s (↓)        |               |               |               |               |
 
 **Key:**  
-↑ = Performance decrease (red) | ↓ = Performance improvement (green)  
+↑ = Performance decrease | ↓ = Performance improvement  
 *Empty cells indicate iterations yet to be completed or measured*
 
 ## Informações Gerais

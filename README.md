@@ -1,5 +1,38 @@
 # IPMProject
-# Bake-off #2: Seleção em UIs Densas
+## Bake-off #2: Seleção em UIs Densas
+
+## Execution Times
+
+| Participant  | Metric      | Base Line    | 1st Iteration    | 2nd Iteration | 3rd Iteration | 4th Iteration | 5th Iteration |
+|--------------|-------------|--------------|-------------------|---------------|---------------|---------------|---------------|
+| **Vicente**  | Total Time  | 148.473s     | 33.298s (↓)       |               |               |               |               |
+|              | Avg         | 12.372s      | 2.774s (↓)        |               |               |               |               |
+|              | Final       | 13.039s      | 2.774s (↓)        |               |               |               |               |
+| **Diogo**    | Total Time  | 198.715s     | 38.193s (↓)       |               |               |               |               |
+|              | Avg         | 16.559s      | 3.182s (↓)        |               |               |               |               |
+|              | Final       | 17.226s      | 3.182s (↓)        |               |               |               |               |
+| **Hugo**     | Total Time  | 154.962s     | 35.866s (↓)       |               |               |               |               |
+|              | Avg         | 12.913s      | 2.988s (↓)        |               |               |               |               |
+|              | Final       | 13.580s      | 2.988s (↓)        |               |               |               |               |
+| **Sérgio**   | Total Time  | 180.857s     | 24.740s (↓)       |               |               |               |               |
+|              | Avg         | 15.071s      | 2.061s (↓)        |               |               |               |               |
+|              | Final       | 17.404s      | 2.061s (↓)        |               |               |               |               |
+| **Cátia**    | Total Time  | 144.139s     | 33.6317s (↓)      |               |               |               |               |
+|              | Avg         | 12.011s      | 2.802s (↓)        |               |               |               |               |
+|              | Final       | 12.001s      | 2.802s (↓)        |               |               |               |               |
+| **Felipe**   | Total Time  | 138.9835s    | 26.2203s (↓)      |               |               |               |               |
+|              | Avg         | 11.581s      | 2.185s (↓)        |               |               |               |               |
+|              | Final       | 11.581s      | 2.185s (↓)        |               |               |               |               |
+| **Guilherme**| Total Time  | 144.139s     | 33.6317s (↓)      |               |               |               |               |
+|              | Avg         | 12.011s      | 2.802s (↓)        |               |               |               |               |
+|              | Final       | 12.001s      | 2.802s (↓)        |               |               |               |               |
+| **Leonardo** | Total Time  | 200.1247s    | 27.05089s (↓)     |               |               |               |               |
+|              | Avg         | 16.677s      | 2.254s (↓)        |               |               |               |               |
+|              | Final       | 16.667s      | 2.254s (↓)        |               |               |               |               |
+
+**Key:**  
+↑ = Performance decrease | ↓ = Performance improvement  
+*Empty cells indicate iterations yet to be completed or measured*
 
 ## Informações Gerais
 - **Disponível**: 10 de Março de 2025

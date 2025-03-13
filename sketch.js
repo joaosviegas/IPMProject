@@ -6,7 +6,7 @@
 // p5.js reference: https://p5js.org/reference/
 
 // Database (CHANGE THESE!)
-const GROUP_NUMBER        = 1;      // Add your group number here as an integer (e.g., 2, 3)
+const GROUP_NUMBER        = 18;      // Add your group number here as an integer (e.g., 2, 3)
 const RECORD_TO_FIREBASE  = false;  // Set to 'true' to record user results to Firebase
 
 // Pixel density and setup variables (DO NOT CHANGE!)
@@ -190,6 +190,11 @@ function continueTest()
   
   current_trial = 0;
   continue_button.remove();
+  
+  // Reset all targets to their original state
+  for (let i = 0; i < targets.length; i++) {
+    targets[i].reset();
+  }
   
   // Shows the targets again
   draw_targets = true; 

@@ -1,0 +1,623 @@
+RELATÓRIO AVANÇADO DE ANÁLISE DE GRUPOS DE CIDADES
+========================================================================================================================
+
+RANKING GLOBAL (PIOR → MELHOR)
+------------------------------------------------------------------------------------------------------------------------
+Posição  Arquivo                        Score      Média    Duplicados   CV       Longos (>20) Outliers   Países    
+------------------------------------------------------------------------------------------------------------------------
+1        G_50.csv                       0.43       8.66     0.00%        0.54     2            6          43        
+2        G_27.csv                       0.43       8.94     0.00%        0.50     2            4          37        
+3        G_18.csv                       0.43       8.31     0.00%        0.50     1            7          32        
+4        G_55.csv                       0.42       8.74     1.25%        0.45     1            2          42        
+5        G_35.csv                       0.42       8.78     0.00%        0.45     2            4          42        
+6        G_14.csv                       0.42       8.24     0.00%        0.44     1            7          29        
+7        G_49.csv                       0.42       8.47     0.00%        0.45     1            4          35        
+8        G_45.csv                       0.42       8.10     0.00%        0.44     2            3          42        
+9        G_15.csv                       0.42       8.53     0.00%        0.44     2            4          35        
+10       G_48.csv                       0.42       8.68     0.00%        0.44     1            5          43        
+11       G_57.csv                       0.42       8.84     0.00%        0.44     3            5          43        
+12       G_46.csv                       0.42       8.47     0.00%        0.43     3            3          36        
+13       G_29.csv                       0.41       9.41     0.00%        0.42     2            3          36        
+14       G_47.csv                       0.41       8.38     0.00%        0.42     2            4          37        
+15       G_59.csv                       0.41       7.95     0.00%        0.42     1            4          41        
+16       G_51.csv                       0.41       8.22     0.00%        0.42     1            7          40        
+17       G_60.csv                       0.41       7.95     0.00%        0.42     1            6          44        
+18       G_22.csv                       0.41       7.81     0.00%        0.42     1            3          35        
+19       G_44.csv                       0.41       8.81     0.00%        0.42     2            4          39        
+20       G_52.csv                       0.41       8.22     0.00%        0.41     1            3          38        
+21       G_12.csv                       0.41       7.81     0.00%        0.41     2            4          30        
+22       G_43.csv                       0.41       8.51     0.00%        0.41     1            4          41        
+23       G_28.csv                       0.41       8.01     0.00%        0.40     1            4          39        
+24       G_38.csv                       0.41       8.39     0.00%        0.40     1            10         42        
+25       G_21.csv                       0.41       8.57     0.00%        0.39     1            11         31        
+26       G_31.csv                       0.41       8.30     0.00%        0.39     1            3          39        
+27       G_16.csv                       0.41       8.09     0.00%        0.38     1            4          36        
+28       G_53.csv                       0.41       8.76     1.25%        0.37     1            5          36        
+29       G_9.csv                        0.41       7.65     1.25%        0.36     1            6          30        
+30       G_62.csv                       0.40       8.00     0.00%        0.35     1            1          37        
+31       G_20.csv                       0.40       8.49     0.00%        0.34     1            2          35        
+32       G_4.csv                        0.40       7.56     0.00%        0.33     1            2          30        
+33       G_33.csv                       0.31       8.60     0.00%        0.42     0            2          42        
+34       G_36.csv                       0.31       8.20     0.00%        0.39     0            5          43        
+35       G_11.csv                       0.31       8.56     0.00%        0.38     0            5          33        
+36       G_42.csv                       0.31       7.96     0.00%        0.37     0            3          40        
+37       G_25.csv                       0.30       7.66     0.00%        0.36     0            1          36        
+38       G_19.csv                       0.30       7.91     0.00%        0.34     0            4          34        
+39       G_58.csv                       0.30       8.21     0.00%        0.36     0            5          39        
+40       G_54.csv                       0.30       8.19     0.00%        0.34     0            1          41        
+41       G_61.csv                       0.30       7.95     0.00%        0.35     0            4          39        
+42       G_37.csv                       0.30       7.89     0.00%        0.35     0            2          35        
+43       G_34.csv                       0.30       8.31     0.00%        0.34     0            1          40        
+44       G_13.csv                       0.30       7.94     0.00%        0.34     0            5          31        
+45       G_40.csv                       0.30       8.51     0.00%        0.34     0            1          40        
+46       G_39.csv                       0.30       7.95     0.00%        0.34     0            1          49        
+47       G_26.csv                       0.30       8.09     0.00%        0.34     0            1          40        
+48       G_24.csv                       0.30       7.88     0.00%        0.33     0            1          35        
+49       G_23.csv                       0.30       7.58     0.00%        0.33     0            3          35        
+50       G_7.csv                        0.30       7.89     1.25%        0.31     0            2          33        
+51       G_6.csv                        0.30       7.75     0.00%        0.32     0            3          31        
+52       G_1.csv                        0.30       7.41     0.00%        0.31     0            6          32        
+53       G_10.csv                       0.30       7.94     0.00%        0.30     0            2          38        
+54       G_56.csv                       0.29       7.58     0.00%        0.29     0            2          40        
+55       G_3.csv                        0.29       7.06     1.25%        0.27     0            3          19        
+56       G_63.csv                       0.29       7.58     0.00%        0.28     0            1          36        
+57       G_2.csv                        0.29       7.53     0.00%        0.28     0            2          20        
+58       G_5.csv                        0.29       7.29     0.00%        0.26     0            2          34        
+59       G_32.csv                       0.21       7.47     0.00%        0.39     0            0          39        
+60       G_41.csv                       0.21       8.43     1.25%        0.35     0            0          42        
+
+
+🔴 PIOR GRUPO IDENTIFICADO 🔴
+Arquivo: G_50.csv
+Score Total: 8.66 (Quanto maior, pior)
+Características Críticas:
+- Média de caracteres: 8.66
+- Taxa de duplicatas: 0.00%
+- Nomes longos (>20): 2
+- Outliers detectados: 6
+- Diversidade de países: 43 (Baixa diversidade aumenta risco)
+- País predominante: India
+
+
+ANÁLISE INDIVIDUAL DETALHADA
+========================================================================================================================
+
+📁 Arquivo: G_1.csv
+- Média Comprimento: 7.41 | Mediana: 7.0 | Desvio: 2.30
+- Coef. Variação: 0.31 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 1 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 32 países | Mais comum: China
+- Outliers (IQR): 6
+
+📁 Arquivo: G_10.csv
+- Média Comprimento: 7.94 | Mediana: 8.0 | Desvio: 2.39
+- Coef. Variação: 0.30 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 1 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 38 países | Mais comum: China
+- Outliers (IQR): 2
+
+📁 Arquivo: G_11.csv
+- Média Comprimento: 8.56 | Mediana: 8.0 | Desvio: 3.29
+- Coef. Variação: 0.38 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 4 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 33 países | Mais comum: China
+- Outliers (IQR): 5
+
+📁 Arquivo: G_12.csv
+- Média Comprimento: 7.81 | Mediana: 7.0 | Desvio: 3.21
+- Coef. Variação: 0.41 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 3 | (>20): 2
+- Caracteres Especiais: 0.00%
+- Diversidade: 30 países | Mais comum: China
+- Outliers (IQR): 4
+
+📁 Arquivo: G_13.csv
+- Média Comprimento: 7.94 | Mediana: 7.0 | Desvio: 2.73
+- Coef. Variação: 0.34 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 2 | (>20): 0
+- Caracteres Especiais: 1.25%
+- Diversidade: 31 países | Mais comum: China
+- Outliers (IQR): 5
+
+📁 Arquivo: G_14.csv
+- Média Comprimento: 8.24 | Mediana: 7.0 | Desvio: 3.63
+- Coef. Variação: 0.44 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 5 | (>20): 1
+- Caracteres Especiais: 1.25%
+- Diversidade: 29 países | Mais comum: China
+- Outliers (IQR): 7
+
+📁 Arquivo: G_15.csv
+- Média Comprimento: 8.53 | Mediana: 7.5 | Desvio: 3.77
+- Coef. Variação: 0.44 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 5 | (>20): 2
+- Caracteres Especiais: 0.00%
+- Diversidade: 35 países | Mais comum: China
+- Outliers (IQR): 4
+
+📁 Arquivo: G_16.csv
+- Média Comprimento: 8.09 | Mediana: 8.0 | Desvio: 3.08
+- Coef. Variação: 0.38 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 3 | (>20): 1
+- Caracteres Especiais: 1.25%
+- Diversidade: 36 países | Mais comum: China
+- Outliers (IQR): 4
+
+📁 Arquivo: G_18.csv
+- Média Comprimento: 8.31 | Mediana: 7.0 | Desvio: 4.12
+- Coef. Variação: 0.50 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 4 | (>20): 1
+- Caracteres Especiais: 1.25%
+- Diversidade: 32 países | Mais comum: China
+- Outliers (IQR): 7
+
+📁 Arquivo: G_19.csv
+- Média Comprimento: 7.91 | Mediana: 7.5 | Desvio: 2.72
+- Coef. Variação: 0.34 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 2 | (>20): 0
+- Caracteres Especiais: 2.50%
+- Diversidade: 34 países | Mais comum: China
+- Outliers (IQR): 4
+
+📁 Arquivo: G_2.csv
+- Média Comprimento: 7.53 | Mediana: 7.0 | Desvio: 2.12
+- Coef. Variação: 0.28 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 1 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 20 países | Mais comum: China
+- Outliers (IQR): 2
+
+📁 Arquivo: G_20.csv
+- Média Comprimento: 8.49 | Mediana: 8.0 | Desvio: 2.93
+- Coef. Variação: 0.34 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 2 | (>20): 1
+- Caracteres Especiais: 1.25%
+- Diversidade: 35 países | Mais comum: China
+- Outliers (IQR): 2
+
+📁 Arquivo: G_21.csv
+- Média Comprimento: 8.57 | Mediana: 8.0 | Desvio: 3.37
+- Coef. Variação: 0.39 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 4 | (>20): 1
+- Caracteres Especiais: 0.00%
+- Diversidade: 31 países | Mais comum: China
+- Outliers (IQR): 11
+
+📁 Arquivo: G_22.csv
+- Média Comprimento: 7.81 | Mediana: 7.0 | Desvio: 3.26
+- Coef. Variação: 0.42 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 2 | (>20): 1
+- Caracteres Especiais: 0.00%
+- Diversidade: 35 países | Mais comum: China
+- Outliers (IQR): 3
+
+📁 Arquivo: G_23.csv
+- Média Comprimento: 7.58 | Mediana: 7.0 | Desvio: 2.50
+- Coef. Variação: 0.33 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 1 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 35 países | Mais comum: India
+- Outliers (IQR): 3
+
+📁 Arquivo: G_24.csv
+- Média Comprimento: 7.88 | Mediana: 7.0 | Desvio: 2.61
+- Coef. Variação: 0.33 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 0 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 35 países | Mais comum: China
+- Outliers (IQR): 1
+
+📁 Arquivo: G_25.csv
+- Média Comprimento: 7.66 | Mediana: 7.0 | Desvio: 2.76
+- Coef. Variação: 0.36 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 1 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 36 países | Mais comum: China
+- Outliers (IQR): 1
+
+📁 Arquivo: G_26.csv
+- Média Comprimento: 8.09 | Mediana: 8.0 | Desvio: 2.74
+- Coef. Variação: 0.34 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 1 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 40 países | Mais comum: India
+- Outliers (IQR): 1
+
+📁 Arquivo: G_27.csv
+- Média Comprimento: 8.94 | Mediana: 8.0 | Desvio: 4.43
+- Coef. Variação: 0.50 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 4 | (>20): 2
+- Caracteres Especiais: 1.25%
+- Diversidade: 37 países | Mais comum: India
+- Outliers (IQR): 4
+
+📁 Arquivo: G_28.csv
+- Média Comprimento: 8.01 | Mediana: 7.0 | Desvio: 3.24
+- Coef. Variação: 0.40 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 3 | (>20): 1
+- Caracteres Especiais: 0.00%
+- Diversidade: 39 países | Mais comum: India
+- Outliers (IQR): 4
+
+📁 Arquivo: G_29.csv
+- Média Comprimento: 9.41 | Mediana: 8.0 | Desvio: 3.93
+- Coef. Variação: 0.42 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 7 | (>20): 2
+- Caracteres Especiais: 1.25%
+- Diversidade: 36 países | Mais comum: Mexico
+- Outliers (IQR): 3
+
+📁 Arquivo: G_3.csv
+- Média Comprimento: 7.06 | Mediana: 7.0 | Desvio: 1.92
+- Coef. Variação: 0.27 (Alto > 0.5)
+- Duplicatas: 1.25% | Únicos: 79/80
+- Nomes Longos (>15): 1 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 19 países | Mais comum: China
+- Outliers (IQR): 3
+
+📁 Arquivo: G_31.csv
+- Média Comprimento: 8.30 | Mediana: 7.0 | Desvio: 3.25
+- Coef. Variação: 0.39 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 3 | (>20): 1
+- Caracteres Especiais: 0.00%
+- Diversidade: 39 países | Mais comum: India
+- Outliers (IQR): 3
+
+📁 Arquivo: G_32.csv
+- Média Comprimento: 7.47 | Mediana: 6.5 | Desvio: 2.89
+- Coef. Variação: 0.39 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 0 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 39 países | Mais comum: Brazil
+- Outliers (IQR): 0
+
+📁 Arquivo: G_33.csv
+- Média Comprimento: 8.60 | Mediana: 8.0 | Desvio: 3.61
+- Coef. Variação: 0.42 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 5 | (>20): 0
+- Caracteres Especiais: 1.25%
+- Diversidade: 42 países | Mais comum: United States
+- Outliers (IQR): 2
+
+📁 Arquivo: G_34.csv
+- Média Comprimento: 8.31 | Mediana: 8.0 | Desvio: 2.87
+- Coef. Variação: 0.34 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 1 | (>20): 0
+- Caracteres Especiais: 1.25%
+- Diversidade: 40 países | Mais comum: India
+- Outliers (IQR): 1
+
+📁 Arquivo: G_35.csv
+- Média Comprimento: 8.78 | Mediana: 8.0 | Desvio: 3.92
+- Coef. Variação: 0.45 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 4 | (>20): 2
+- Caracteres Especiais: 1.25%
+- Diversidade: 42 países | Mais comum: Brazil
+- Outliers (IQR): 4
+
+📁 Arquivo: G_36.csv
+- Média Comprimento: 8.20 | Mediana: 8.0 | Desvio: 3.22
+- Coef. Variação: 0.39 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 2 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 43 países | Mais comum: India
+- Outliers (IQR): 5
+
+📁 Arquivo: G_37.csv
+- Média Comprimento: 7.89 | Mediana: 7.0 | Desvio: 2.79
+- Coef. Variação: 0.35 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 1 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 35 países | Mais comum: India
+- Outliers (IQR): 2
+
+📁 Arquivo: G_38.csv
+- Média Comprimento: 8.39 | Mediana: 8.0 | Desvio: 3.35
+- Coef. Variação: 0.40 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 3 | (>20): 1
+- Caracteres Especiais: 0.00%
+- Diversidade: 42 países | Mais comum: India
+- Outliers (IQR): 10
+
+📁 Arquivo: G_39.csv
+- Média Comprimento: 7.95 | Mediana: 7.5 | Desvio: 2.72
+- Coef. Variação: 0.34 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 1 | (>20): 0
+- Caracteres Especiais: 1.25%
+- Diversidade: 49 países | Mais comum: India
+- Outliers (IQR): 1
+
+📁 Arquivo: G_4.csv
+- Média Comprimento: 7.56 | Mediana: 7.0 | Desvio: 2.53
+- Coef. Variação: 0.33 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 1 | (>20): 1
+- Caracteres Especiais: 0.00%
+- Diversidade: 30 países | Mais comum: China
+- Outliers (IQR): 2
+
+📁 Arquivo: G_40.csv
+- Média Comprimento: 8.51 | Mediana: 8.0 | Desvio: 2.92
+- Coef. Variação: 0.34 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 1 | (>20): 0
+- Caracteres Especiais: 1.25%
+- Diversidade: 40 países | Mais comum: India
+- Outliers (IQR): 1
+
+📁 Arquivo: G_41.csv
+- Média Comprimento: 8.43 | Mediana: 8.0 | Desvio: 2.94
+- Coef. Variação: 0.35 (Alto > 0.5)
+- Duplicatas: 1.25% | Únicos: 79/80
+- Nomes Longos (>15): 2 | (>20): 0
+- Caracteres Especiais: 1.25%
+- Diversidade: 42 países | Mais comum: India
+- Outliers (IQR): 0
+
+📁 Arquivo: G_42.csv
+- Média Comprimento: 7.96 | Mediana: 7.0 | Desvio: 2.95
+- Coef. Variação: 0.37 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 3 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 40 países | Mais comum: India
+- Outliers (IQR): 3
+
+📁 Arquivo: G_43.csv
+- Média Comprimento: 8.51 | Mediana: 8.0 | Desvio: 3.48
+- Coef. Variação: 0.41 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 4 | (>20): 1
+- Caracteres Especiais: 0.00%
+- Diversidade: 41 países | Mais comum: India
+- Outliers (IQR): 4
+
+📁 Arquivo: G_44.csv
+- Média Comprimento: 8.81 | Mediana: 8.0 | Desvio: 3.67
+- Coef. Variação: 0.42 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 3 | (>20): 2
+- Caracteres Especiais: 0.00%
+- Diversidade: 39 países | Mais comum: India
+- Outliers (IQR): 4
+
+📁 Arquivo: G_45.csv
+- Média Comprimento: 8.10 | Mediana: 8.0 | Desvio: 3.54
+- Coef. Variação: 0.44 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 3 | (>20): 2
+- Caracteres Especiais: 1.25%
+- Diversidade: 42 países | Mais comum: India
+- Outliers (IQR): 3
+
+📁 Arquivo: G_46.csv
+- Média Comprimento: 8.47 | Mediana: 8.0 | Desvio: 3.63
+- Coef. Variação: 0.43 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 3 | (>20): 3
+- Caracteres Especiais: 1.25%
+- Diversidade: 36 países | Mais comum: India
+- Outliers (IQR): 3
+
+📁 Arquivo: G_47.csv
+- Média Comprimento: 8.38 | Mediana: 8.0 | Desvio: 3.55
+- Coef. Variação: 0.42 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 3 | (>20): 2
+- Caracteres Especiais: 0.00%
+- Diversidade: 37 países | Mais comum: India
+- Outliers (IQR): 4
+
+📁 Arquivo: G_48.csv
+- Média Comprimento: 8.68 | Mediana: 7.5 | Desvio: 3.83
+- Coef. Variação: 0.44 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 5 | (>20): 1
+- Caracteres Especiais: 0.00%
+- Diversidade: 43 países | Mais comum: United States
+- Outliers (IQR): 5
+
+📁 Arquivo: G_49.csv
+- Média Comprimento: 8.47 | Mediana: 8.0 | Desvio: 3.80
+- Coef. Variação: 0.45 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 4 | (>20): 1
+- Caracteres Especiais: 0.00%
+- Diversidade: 35 países | Mais comum: India
+- Outliers (IQR): 4
+
+📁 Arquivo: G_5.csv
+- Média Comprimento: 7.29 | Mediana: 7.0 | Desvio: 1.88
+- Coef. Variação: 0.26 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 0 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 34 países | Mais comum: China
+- Outliers (IQR): 2
+
+📁 Arquivo: G_50.csv
+- Média Comprimento: 8.66 | Mediana: 7.0 | Desvio: 4.66
+- Coef. Variação: 0.54 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 6 | (>20): 2
+- Caracteres Especiais: 0.00%
+- Diversidade: 43 países | Mais comum: India
+- Outliers (IQR): 6
+
+📁 Arquivo: G_51.csv
+- Média Comprimento: 8.22 | Mediana: 8.0 | Desvio: 3.45
+- Coef. Variação: 0.42 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 3 | (>20): 1
+- Caracteres Especiais: 0.00%
+- Diversidade: 40 países | Mais comum: United States
+- Outliers (IQR): 7
+
+📁 Arquivo: G_52.csv
+- Média Comprimento: 8.22 | Mediana: 8.0 | Desvio: 3.41
+- Coef. Variação: 0.41 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 2 | (>20): 1
+- Caracteres Especiais: 0.00%
+- Diversidade: 38 países | Mais comum: India
+- Outliers (IQR): 3
+
+📁 Arquivo: G_53.csv
+- Média Comprimento: 8.76 | Mediana: 8.0 | Desvio: 3.21
+- Coef. Variação: 0.37 (Alto > 0.5)
+- Duplicatas: 1.25% | Únicos: 79/80
+- Nomes Longos (>15): 4 | (>20): 1
+- Caracteres Especiais: 0.00%
+- Diversidade: 36 países | Mais comum: India
+- Outliers (IQR): 5
+
+📁 Arquivo: G_54.csv
+- Média Comprimento: 8.19 | Mediana: 8.0 | Desvio: 2.80
+- Coef. Variação: 0.34 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 2 | (>20): 0
+- Caracteres Especiais: 2.50%
+- Diversidade: 41 países | Mais comum: United States
+- Outliers (IQR): 1
+
+📁 Arquivo: G_55.csv
+- Média Comprimento: 8.74 | Mediana: 8.0 | Desvio: 3.97
+- Coef. Variação: 0.45 (Alto > 0.5)
+- Duplicatas: 1.25% | Únicos: 79/80
+- Nomes Longos (>15): 5 | (>20): 1
+- Caracteres Especiais: 1.25%
+- Diversidade: 42 países | Mais comum: India
+- Outliers (IQR): 2
+
+📁 Arquivo: G_56.csv
+- Média Comprimento: 7.58 | Mediana: 7.5 | Desvio: 2.20
+- Coef. Variação: 0.29 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 0 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 40 países | Mais comum: India
+- Outliers (IQR): 2
+
+📁 Arquivo: G_57.csv
+- Média Comprimento: 8.84 | Mediana: 8.0 | Desvio: 3.86
+- Coef. Variação: 0.44 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 4 | (>20): 3
+- Caracteres Especiais: 0.00%
+- Diversidade: 43 países | Mais comum: Philippines
+- Outliers (IQR): 5
+
+📁 Arquivo: G_58.csv
+- Média Comprimento: 8.21 | Mediana: 7.5 | Desvio: 2.96
+- Coef. Variação: 0.36 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 2 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 39 países | Mais comum: United States
+- Outliers (IQR): 5
+
+📁 Arquivo: G_59.csv
+- Média Comprimento: 7.95 | Mediana: 8.0 | Desvio: 3.36
+- Coef. Variação: 0.42 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 3 | (>20): 1
+- Caracteres Especiais: 0.00%
+- Diversidade: 41 países | Mais comum: United States
+- Outliers (IQR): 4
+
+📁 Arquivo: G_6.csv
+- Média Comprimento: 7.75 | Mediana: 7.0 | Desvio: 2.50
+- Coef. Variação: 0.32 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 1 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 31 países | Mais comum: China
+- Outliers (IQR): 3
+
+📁 Arquivo: G_60.csv
+- Média Comprimento: 7.95 | Mediana: 7.0 | Desvio: 3.33
+- Coef. Variação: 0.42 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 3 | (>20): 1
+- Caracteres Especiais: 0.00%
+- Diversidade: 44 países | Mais comum: Brazil
+- Outliers (IQR): 6
+
+📁 Arquivo: G_61.csv
+- Média Comprimento: 7.95 | Mediana: 8.0 | Desvio: 2.81
+- Coef. Variação: 0.35 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 3 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 39 países | Mais comum: China
+- Outliers (IQR): 4
+
+📁 Arquivo: G_62.csv
+- Média Comprimento: 8.00 | Mediana: 7.0 | Desvio: 2.81
+- Coef. Variação: 0.35 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 1 | (>20): 1
+- Caracteres Especiais: 1.25%
+- Diversidade: 37 países | Mais comum: India
+- Outliers (IQR): 1
+
+📁 Arquivo: G_63.csv
+- Média Comprimento: 7.58 | Mediana: 7.5 | Desvio: 2.15
+- Coef. Variação: 0.28 (Alto > 0.5)
+- Duplicatas: 0.00% | Únicos: 80/80
+- Nomes Longos (>15): 1 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 36 países | Mais comum: China
+- Outliers (IQR): 1
+
+📁 Arquivo: G_7.csv
+- Média Comprimento: 7.89 | Mediana: 7.0 | Desvio: 2.46
+- Coef. Variação: 0.31 (Alto > 0.5)
+- Duplicatas: 1.25% | Únicos: 79/80
+- Nomes Longos (>15): 1 | (>20): 0
+- Caracteres Especiais: 0.00%
+- Diversidade: 33 países | Mais comum: China
+- Outliers (IQR): 2
+
+📁 Arquivo: G_9.csv
+- Média Comprimento: 7.65 | Mediana: 7.0 | Desvio: 2.79
+- Coef. Variação: 0.36 (Alto > 0.5)
+- Duplicatas: 1.25% | Únicos: 79/80
+- Nomes Longos (>15): 1 | (>20): 1
+- Caracteres Especiais: 0.00%
+- Diversidade: 30 países | Mais comum: China
+- Outliers (IQR): 6

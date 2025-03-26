@@ -15,7 +15,7 @@ function getColorForLetter(letter) {
     'K': color(220, 20, 60),    // Crimson
     'L': color(211, 211, 211),  // Light Gray
     'M': color(255, 69, 0),     // Red Orange
-    'N': color(0, 128, 128),    // Teal
+    'N': color(64, 224, 208),    // Light Sea Green
     'O': color(128, 0, 128),    // Purple
     'P': color(30, 144, 255),   // Dodger Blue
     'Q': color(186, 85, 211),   // Medium Orchid

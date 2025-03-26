@@ -52,7 +52,7 @@ class Target {
     this.clickScale = 1.0; // For click animation
     this.clickAnimating = false; // If the animation is in progress
     this.animationStartTime = 0; // When the animation started
-    this.abbreviation = l.substring(0, 2).toUpperCase(); // First 2 letters
+    this.abbreviation = l.substring(0, 3).toUpperCase(); // First 3 letters
   }
 
   clicked(mouse_x, mouse_y) {

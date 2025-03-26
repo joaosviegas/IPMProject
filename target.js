@@ -7,7 +7,7 @@ function getColorForLetter(letter) {
     'C': color(106, 168, 79),   // Medium Green
     'D': color(61, 133, 198),   // Strong Blue
     'E': color(255, 103, 0),    // Bright Orange
-    'F': color(138, 43, 226),   // Blue Violet
+    'F': color(180, 160, 255),   // Blue Violet
     'G': color(255, 255, 0),    // Yellow
     'H': color(34, 139, 34),    // Forest Green
     'I': color(173, 216, 230),  // Light Blue
@@ -132,7 +132,7 @@ class Target {
     // Dynamically adjust the font size based on the label length
     const baseSize = 18; // Base reduced to 18
     const maxLength = 15; // Number of characters before reducing the size
-    return Math.max(11, baseSize - Math.max(0, this.label.length - maxLength)); // Minimum of 11
+    return Math.max(14, baseSize - Math.max(0, this.label.length - maxLength)); // Minimum of 14
   }
 
   wrapText(str, x, y, maxWidth, maxHeight) {

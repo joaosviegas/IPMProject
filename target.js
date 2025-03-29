@@ -53,6 +53,8 @@ class Target {
     this.clickAnimating = false; // If the animation is in progress
     this.animationStartTime = 0; // When the animation started
     this.abbreviation = l.substring(0, 3).toUpperCase(); // First 3 letters
+    this.clickedBefore = false; // Property to track if target was ever clicked
+    this.clickCount = 0; // Track how many times this target was clicked
   }
 
   clicked(mouse_x, mouse_y) {
@@ -69,8 +71,9 @@ class Target {
       this.clickAnimating = true;
       this.animationStartTime = millis();
       
-      // Do not mark the target as selected or change the color permanently
-      // This way, the same target can be selected multiple times
+      // Mark this target as being clicked before
+      this.clickedBefore = true;
+      this.clickCount++;
     }
     
     return hit;
@@ -98,9 +101,57 @@ class Target {
     // Draw the background rectangle with a border for better contrast
     fill(this.color);
     strokeWeight(2);
-    stroke(40, 40, 40);
+    
+    // Change border for clicked targets - make it more noticeable
+    if (this.clickedBefore) {
+      stroke(255, 255, 255); // White border
+      strokeWeight(4); // Thicker border
+    } else {
+      stroke(40, 40, 40); // Original dark border
+    }
+    
     rectMode(CENTER);
     rect(0, 0, this.width, this.height, 5);
+    
+    // Add a check mark or indicator for clicked targets
+    if (this.clickedBefore) {
+      // Add a star in the top-right corner
+      push();
+      translate(this.width/2 - 15, -this.height/2 + 15);
+      noStroke();
+      fill(255, 255, 255); // White star
+      
+      // Draw a simple star
+      beginShape();
+      for (let i = 0; i < 5; i++) {
+        let angle = TWO_PI * i / 5 - HALF_PI;
+        let x1 = cos(angle) * 7;
+        let y1 = sin(angle) * 7;
+        vertex(x1, y1);
+        
+        angle += TWO_PI / 10;
+        let x2 = cos(angle) * 3;
+        let y2 = sin(angle) * 3;
+        vertex(x2, y2);
+      }
+      endShape(CLOSE);
+      
+      // If clicked multiple times, show the count
+      if (this.clickCount > 1) {
+        fill(255);
+        textAlign(CENTER, CENTER);
+        textSize(10);
+        textStyle(BOLD);
+        text(this.clickCount, 0, 0);
+      }
+      pop();
+      
+      // Add a subtle highlight effect
+      noFill();
+      stroke(255, 255, 255, 100); // Semi-transparent white
+      strokeWeight(2);
+      rect(0, 0, this.width - 8, this.height - 8, 3); // Inner glow effect
+    }
 
     // Calculate text dimensions
     const maxWidth = this.width - 20; // 10px padding on each side
@@ -114,7 +165,14 @@ class Target {
     // Draw the abbreviation with improved highlight
     textFont("Poppins", 22); // Slightly smaller size to avoid overlap
     textStyle(BOLD);
-    fill(255);
+    
+    // Make the abbreviation text brighter for clicked targets
+    if (this.clickedBefore) {
+      fill(255, 255, 0); // Bright yellow text for clicked targets
+    } else {
+      fill(255); // Regular white text
+    }
+    
     textAlign(CENTER, CENTER);
     text(this.abbreviation, 0, -this.height/3.5);
     textStyle(NORMAL);
@@ -171,6 +229,8 @@ class Target {
     this.color = this.originalColor;
     this.clickScale = 1.0;
     this.clickAnimating = false;
+    this.clickedBefore = false;
+    this.clickCount = 0;
   }
 }
 

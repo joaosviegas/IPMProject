@@ -7,7 +7,7 @@ function getColorForLetter(letter) {
     'C': color(106, 168, 79),   // Medium Green
     'D': color(61, 133, 198),   // Strong Blue
     'E': color(255, 103, 0),    // Bright Orange
-    'F': color(180, 160, 255),   // Blue Violet
+    'F': color(180, 160, 255),  // Blue Violet
     'G': color(255, 255, 0),    // Yellow
     'H': color(34, 139, 34),    // Forest Green
     'I': color(173, 216, 230),  // Light Blue
@@ -15,7 +15,7 @@ function getColorForLetter(letter) {
     'K': color(220, 20, 60),    // Crimson
     'L': color(211, 211, 211),  // Light Gray
     'M': color(255, 69, 0),     // Red Orange
-    'N': color(64, 224, 208),    // Light Sea Green
+    'N': color(64, 224, 208),   // Light Sea Green
     'O': color(128, 0, 128),    // Purple
     'P': color(30, 144, 255),   // Dodger Blue
     'Q': color(186, 85, 211),   // Medium Orchid
@@ -37,7 +37,7 @@ function getColorForLetter(letter) {
   return colorMap[upperLetter] || color(255, 255, 255);
 }
 
-// Updated Target class with improved visuals
+// Updated Target class with improved visuals and added hover effect
 class Target {
   constructor(x, y, w, l, id) {
     this.x = x;
@@ -54,7 +54,16 @@ class Target {
     this.animationStartTime = 0; // When the animation started
     this.abbreviation = l.substring(0, 3).toUpperCase(); // First 3 letters
     this.clickedBefore = false; // Property to track if target was ever clicked
-    this.clickCount = 0; // Track how many times this target was clicked
+  }
+
+  // New method to detect if the mouse is hovering over the target
+  isHovered() {
+    return (
+      mouseX >= this.x - this.width / 2 &&
+      mouseX <= this.x + this.width / 2 &&
+      mouseY >= this.y - this.height / 2 &&
+      mouseY <= this.y + this.height / 2
+    );
   }
 
   clicked(mouse_x, mouse_y) {
@@ -73,7 +82,6 @@ class Target {
       
       // Mark this target as being clicked before
       this.clickedBefore = true;
-      this.clickCount++;
     }
     
     return hit;
@@ -97,6 +105,15 @@ class Target {
     push();
     translate(this.x, this.y);
     scale(this.clickScale);
+
+    // Add hover effect to improve target salience
+    if (this.isHovered()) {
+      noFill();
+      stroke(255, 255, 255, 150); // Semi-transparent white outline
+      strokeWeight(6);
+      rectMode(CENTER);
+      rect(0, 0, this.width + 8, this.height + 8, 8);
+    }
 
     // Draw the background rectangle with a border for better contrast
     fill(this.color);
@@ -135,15 +152,6 @@ class Target {
         vertex(x2, y2);
       }
       endShape(CLOSE);
-      
-      // If clicked multiple times, show the count
-      if (this.clickCount > 1) {
-        fill(255);
-        textAlign(CENTER, CENTER);
-        textSize(10);
-        textStyle(BOLD);
-        text(this.clickCount, 0, 0);
-      }
       pop();
       
       // Add a subtle highlight effect
@@ -155,74 +163,172 @@ class Target {
 
     // Calculate text dimensions
     const maxWidth = this.width - 20; // 10px padding on each side
-    const maxHeight = this.height - 20;
+    
+    // For very long texts, allow more vertical space
+    const textLength = this.label.length;
+    let abbreviationHeight, maxTextHeight;
+    
+    if (textLength > 40) {
+      // For very long texts, make the abbreviation smaller and give more space to the main text
+      abbreviationHeight = this.height/4.5;  // Less space for the abbreviation
+      maxTextHeight = this.height - 25;    // More space for the main text
+    } else {
+      // Default configuration
+      abbreviationHeight = this.height/3.5;
+      maxTextHeight = this.height - 30;
+    }
     
     // Background for the abbreviation (better highlight)
-    fill(0, 0, 0, 80); // Increased opacity to 80 for better contrast
+    fill(0, 0, 0, 90); // Increased opacity to 80 for better contrast
     noStroke();
-    rect(0, -this.height/3.5, this.width - 10, 28, 3); // Adjust position and size
+    rect(0, -abbreviationHeight, this.width - 10, 28, 3); // Adjust position and size
     
     // Draw the abbreviation with improved highlight
     textFont("Poppins", 22); // Slightly smaller size to avoid overlap
     textStyle(BOLD);
-    
-    // Make the abbreviation text brighter for clicked targets
-    if (this.clickedBefore) {
-      fill(255, 255, 0); // Bright yellow text for clicked targets
-    } else {
-      fill(255); // Regular white text
-    }
+    fill(255);
     
     textAlign(CENTER, CENTER);
-    text(this.abbreviation, 0, -this.height/3.5);
+    text(this.abbreviation, 0, -abbreviationHeight);
     textStyle(NORMAL);
+    
+    // Adjust the vertical position of the main text based on its length
+    let textY = this.height/6;
+    if (textLength > 50) {
+      textY = this.height/8; // Move the main text slightly higher
+    }
+    if (textLength > 80) {
+      textY = this.height/10; // Even higher for extremely long texts
+    }
     
     // Draw the main label with automatic line break
     textFont("Poppins", this.calculateFontSize());
     fill(0);
     textAlign(CENTER, CENTER);
-    this.wrapText(this.label, 0, this.height/6, maxWidth, maxHeight); // Adjust position downwards
+    this.wrapText(this.label, 0, textY, maxWidth, maxTextHeight);
 
     pop();
   }
 
   calculateFontSize() {
-    // Dynamically adjust the font size based on the label length
-    const baseSize = 18; // Base reduced to 18
-    const maxLength = 15; // Number of characters before reducing the size
-    return Math.max(14, baseSize - Math.max(0, this.label.length - maxLength)); // Minimum of 14
+    // Simplified approach to calculate font size
+    const baseSize = 22; // Base size reduced to 18
+    const maxLength = 15; // Number of characters before starting to reduce size
+    
+    // For very short texts, keep larger fonts
+    if (this.label.length <= 10) {
+      return 24;
+    } else if (this.label.length <= 15) {
+      return 20;
+    }
+    
+    // Reduce size by 1 for each additional character beyond maxLength
+    // But maintain a minimum size of 14
+    const calculatedSize = baseSize - Math.max(0, this.label.length - maxLength);
+    
+    // Final adjustment for very long words
+    const longestWord = this.getLongestWordLength();
+    if (longestWord > 15) {
+      return Math.max(12, calculatedSize - 2);
+    }
+    
+    return Math.max(14, calculatedSize);
+  }
+
+  getLongestWordLength() {
+    const words = this.label.split(' ');
+    let maxLength = 0;
+    
+    for (let word of words) {
+      maxLength = Math.max(maxLength, word.length);
+    }
+    
+    return maxLength;
   }
 
   wrapText(str, x, y, maxWidth, maxHeight) {
-    // Line break algorithm
+    // Set the font with calculated size
+    const fontSize = this.calculateFontSize();
+    textFont("Poppins", fontSize);
+    
+    // Special handling for short texts - no need to break words
+    if (str.length <= 10) {
+      textAlign(CENTER, CENTER);
+      text(str, x, y);
+      return;
+    }
+    
+    // Break very long words that wouldn't fit in a single line
+    let processedWords = [];
     let words = str.split(' ');
+    
+    for (let word of words) {
+      if (textWidth(word) > maxWidth * 0.9) {
+        // Break very long words into parts
+        let currentPart = "";
+        for (let char of word) {
+          let testPart = currentPart + char;
+          if (textWidth(testPart) > maxWidth * 0.85) {
+            processedWords.push(currentPart + "-");
+            currentPart = char;
+          } else {
+            currentPart += char;
+          }
+        }
+        if (currentPart.length > 0) {
+          processedWords.push(currentPart);
+        }
+      } else {
+        processedWords.push(word);
+      }
+    }
+    
+    // The rest of the function remains the same...
+    // Line-breaking algorithm with processed words
     let lines = [];
-    let currentLine = words[0];
-
-    for (let i = 1; i < words.length; i++) {
-      let testLine = currentLine + ' ' + words[i];
+    let currentLine = processedWords[0] || "";
+  
+    for (let i = 1; i < processedWords.length; i++) {
+      let testLine = currentLine + ' ' + processedWords[i];
       let testWidth = textWidth(testLine);
       
       if (testWidth > maxWidth) {
         lines.push(currentLine);
-        currentLine = words[i];
+        currentLine = processedWords[i];
       } else {
         currentLine = testLine;
       }
     }
-    lines.push(currentLine);
-
+    if (currentLine) lines.push(currentLine);
+  
     // Vertical text centering
-    const lineHeight = textAscent() + textDescent();
-    const totalHeight = lines.length * lineHeight;
-    const startY = y - (totalHeight / 2) + (lineHeight / 2);
-
-    // Draw each line
-    for (let i = 0; i < lines.length; i++) {
-      text(lines[i], x, startY + (i * lineHeight));
+    const lineHeight = textAscent() + textDescent() + 2; // Add a small spacing
+    let totalHeight = lines.length * lineHeight;
+    
+    // If the text is still too large for the available space
+    if (totalHeight > maxHeight) {
+      // Further reduce font size for extreme cases
+      const scaleFactor = maxHeight / totalHeight;
+      const newFontSize = Math.max(5, Math.floor(fontSize * scaleFactor));
+      
+      textFont("Poppins", newFontSize);
+      const newLineHeight = textAscent() + textDescent() + 1; // Reduced spacing
+      totalHeight = lines.length * newLineHeight;
+      
+      const startY = y - (totalHeight / 2) + (newLineHeight / 2);
+      // Draw each line with the reduced size
+      for (let i = 0; i < lines.length; i++) {
+        text(lines[i], x, startY + (i * newLineHeight));
+      }
+    } else {
+      const startY = y - (totalHeight / 2) + (lineHeight / 2);
+      // Draw each line normally
+      for (let i = 0; i < lines.length; i++) {
+        text(lines[i], x, startY + (i * lineHeight));
+      }
     }
   }
-  
+
   // Reset the target for a new attempt
   reset() {
     this.selected = false;
@@ -230,7 +336,6 @@ class Target {
     this.clickScale = 1.0;
     this.clickAnimating = false;
     this.clickedBefore = false;
-    this.clickCount = 0;
   }
 }
 

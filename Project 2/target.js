@@ -42,8 +42,8 @@ class Target {
   constructor(x, y, w, l, id) {
     this.x = x;
     this.y = y;
-    this.width = 150;
-    this.height = 82;
+    this.width = w*2;  // Use o tamanho passado como parâmetro
+    this.height = w * 1;  // Ajuste a proporção conforme necessário
     this.label = l;
     this.id = id;
     this.originalColor = getColorForLetter(l.charAt(0)); // Store original color

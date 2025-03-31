@@ -201,8 +201,7 @@ function continueTest()
 }
 
 // Creates and positions the UI targets
-function createTargets(target_size, horizontal_gap, vertical_gap)
-{
+function createTargets(target_size, horizontal_gap, vertical_gap) {
   // Define the margins between targets by dividing the white space 
   // for the number of targets minus one
   h_margin = horizontal_gap / (GRID_COLUMNS -1);
@@ -213,7 +212,7 @@ function createTargets(target_size, horizontal_gap, vertical_gap)
   {
     for (var c = 0; c < GRID_COLUMNS; c++)
     {
-      let target_x = 40 + (h_margin + target_size) * c + target_size/2;        // give it some margin from the left border
+      let target_x = 40 + (h_margin + target_size) * c + target_size/2;
       let target_y = (v_margin + target_size) * r + target_size/2;
       
       // Find the appropriate label and ID for this target
@@ -221,6 +220,7 @@ function createTargets(target_size, horizontal_gap, vertical_gap)
       let target_id = legendas.getNum(legendas_index, 0);  
       let target_label = legendas.getString(legendas_index, 1);   
       
+      // Passe o tamanho em pixels diretamente
       let target = new Target(target_x, target_y + 40, target_size, target_label, target_id);
       targets.push(target);
     }  
